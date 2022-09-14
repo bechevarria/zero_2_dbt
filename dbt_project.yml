@@ -33,6 +33,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   zero_to_dbt:
-    # Applies to all files under models/marts/
+    # Applies to all files under models/example/
     marts:
       materialized: table

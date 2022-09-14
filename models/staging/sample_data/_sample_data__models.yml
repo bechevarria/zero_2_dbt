@@ -6,6 +6,7 @@ models:
       - name: customer_key
         tests:
           - unique
+          - not_null
       - name: name
       - name: address
       - name: nation_key
@@ -18,7 +19,6 @@ models:
     columns:
       - name: order_key
         tests:
-          - unique
           - not_null
       - name: part_key
       - name: supplier_key
@@ -61,7 +61,7 @@ models:
       - name: priority_code
         tests:
           - accepted_values:
-              values: ['1-URGENT','2-HIGH','3-MEDIUM','4-NOT SPECIFIED']
+              values: ['1-URGENT','2-HIGH','3-MEDIUM','4-NOT SPECIFIED', '5-LOW']
               severity: warn
       - name: clerk_name
       - name: ship_priority
@@ -74,7 +74,7 @@ models:
         tests:
           - unique
           - not_null
-      - name: name
+      - name: region_name
         tests:
           - accepted_values:
               values: ['AFRICA','MIDDLE EAST','ASIA','AMERICA']
