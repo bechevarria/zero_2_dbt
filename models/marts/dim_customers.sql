@@ -17,9 +17,8 @@ final as (
         customer.customer_key,
         customer.customer_name,
         customer.customer_phone,
-        customer.customer_acct_balance,
-        nation.nation_key as nation_key,
-        region.region_key as region_key
+        customer.customer_acct_balance
+        
     from
         customer
         inner join nation
