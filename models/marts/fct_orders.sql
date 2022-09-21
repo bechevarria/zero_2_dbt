@@ -7,7 +7,7 @@
 
 with orders as (
     
-    select * from {{ ref('stg_orders') }} 
+    select * from {{ ref('stg__orders') }} 
 
 ),
 order_item as (
