@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_customers
+  - name: stg__customers
     columns:
       - name: customer_key
         tests:
@@ -15,7 +15,7 @@ models:
       - name: market_segment
       - name: comment
 
-  - name: stg_line_items
+  - name: stg__line_items
     columns:
       - name: order_key
         tests:
@@ -36,7 +36,7 @@ models:
       - name: ship_mode
       - name: comment
 
-  - name: stg_nations
+  - name: stg__nations
     columns:
       - name: nation_key
         tests:
@@ -47,7 +47,7 @@ models:
       - name: comment
              
  
-  - name: stg_order
+  - name: stg__order
 
     columns:
       - name: order_key
@@ -68,7 +68,7 @@ models:
       - name: comment
 
   
-  - name: stg_regions
+  - name: stg__regions
     columns:
       - name: region_key
         tests:
