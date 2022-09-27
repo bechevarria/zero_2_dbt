@@ -1,34 +1,34 @@
-with customer as (
+with customers as (
 
-    select * from {{ ref('stg__customers') }}
+    select * from {{ ref('stg_sample_data__customers') }}
 
 ),
-nation as (
+nations as (
 
-    select * from {{ ref('stg__nations') }}
+    select * from {{ ref('stg_sample_data__nations') }}
 ),
-region as (
+regions as (
 
-    select * from {{ ref('stg__regions') }}
+    select * from {{ ref('stg_sample_data__regions') }}
 
 ),
 final as (
     select 
-        customer.customer_key,
-        customer.customer_name,
-        {# nation.nation_key as nation_key, #}
-        nation.nation_name as nation,
-        {# region.region_key as region_key, #}
-        region.region_name as region,
-        customer.customer_phone,
-        customer.customer_acct_balance
+        customers.customer_key,
+        customers.customer_name,
+        {# nations.nation_key as nation_key, #}
+        nations.nation_name as nation,
+        {# regions.region_key as region_key, #}
+        regions.region_name as region,
+        customers.customer_phone,
+        customers.customer_acct_balance
         -- new column
     from
-        customer
-        inner join nation
-            on customer.nation_key = nation.nation_key
-        inner join region
-            on nation.region_key = region.region_key
+        customers
+        inner join nations
+            on customers.nation_key = nations.nation_key
+        inner join regions
+            on nations.region_key = regions.region_key
 )
 select 
     *
