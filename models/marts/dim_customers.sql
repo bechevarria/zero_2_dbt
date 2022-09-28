@@ -16,9 +16,9 @@ final as (
     select 
         customers.customer_key,
         customers.customer_name,
-        {# nations.nation_key as nation_key, #}
+        nations.nation_key as nation_key,
         nations.nation_name as nation,
-        {# regions.region_key as region_key, #}
+        regions.region_key as region_key, 
         regions.region_name as region,
         customers.customer_phone,
         customers.customer_acct_balance
