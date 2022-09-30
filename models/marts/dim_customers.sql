@@ -17,7 +17,15 @@ final as (
         customers.customer_key,
         customers.customer_name,
         customers.customer_phone,
+<<<<<<< HEAD
         customers.customer_acct_balance
+=======
+        customers.customer_acct_balance,
+        nations.nation_key as nation_key,
+        regions.region_key as region_key
+        -- add nation name
+        -- and region name
+>>>>>>> 6c1645e6e6f06964e5505f171c40aa71633a1a8d
         
     from
         customers

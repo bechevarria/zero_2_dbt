@@ -11,9 +11,15 @@ line_items as (
 ),
 
 final as (
+<<<<<<< HEAD
     
     select 
 
+=======
+    select 
+
+
+>>>>>>> 6c1645e6e6f06964e5505f171c40aa71633a1a8d
         orders.order_key,
         orders.customer_key,
         line_items.part_key,
