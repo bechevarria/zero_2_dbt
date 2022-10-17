@@ -19,9 +19,9 @@ final as (
         customers.customer_phone,
         customers.customer_acct_balance,
         nations.nation_key as nation_key,
-        regions.region_key as region_key
-        -- add nation name 
-        -- add region name 
+        regions.region_key as region_key,
+        nations.nation_name as nation,
+        regions.region_name as region
 
     from
         customers
