@@ -10,3 +10,11 @@ sources:
       - name: nation
       - name: orders
       - name: region
+        freshness:
+          warn_after:
+            count: 7
+            period: day
+          error_after:
+            count: 14 
+            period: day
+        loaded_at_field: "CAST(o_orderdate as TIMESTAMP)"
