@@ -1,3 +1,4 @@
+
 with 
 
 source as (
@@ -9,7 +10,8 @@ source as (
 transformed as (
 
   select 
-    r_regionkey as region_key
+    r_regionkey as region_key,
+    r_name as region_name
     -- add region name here
     
 
