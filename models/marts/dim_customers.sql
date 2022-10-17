@@ -22,6 +22,8 @@ final as (
         regions.region_key as region_key
         -- add nation name 
         -- add region name 
+        , regions.region_name
+        , nations.nation_name
 
     from
         customers

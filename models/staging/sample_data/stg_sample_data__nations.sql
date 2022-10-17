@@ -12,6 +12,7 @@ transformed as (
     n_nationkey as nation_key,
     n_regionkey as region_key
     -- add nation name here
+    , n_name as nation_name
 
 
   from source

@@ -77,7 +77,7 @@ models:
       - name: region_name
         tests:
           - accepted_values:
-              values: ['AFRICA','MIDDLE EAST','ASIA','AMERICA']
+              values: ['AFRICA','MIDDLE EAST','ASIA','AMERICA', 'EUROPE']
               severity: warn
       - name: comment
 
