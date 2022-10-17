@@ -11,6 +11,7 @@ transformed as (
   select 
     n_nationkey as nation_key,
     n_regionkey as region_key
+    n_name as nation_name
     -- add nation name here
 
 
