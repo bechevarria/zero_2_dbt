@@ -7,11 +7,7 @@ models:
         tests:
           - unique
           - not_null
-      - name: region
-        tests:
-          - accepted_values:
-              values: ['AFRICA','MIDDLE EAST','ASIA','AMERICA']
-              severity: warn
+      - name: region        
       - name: name
       - name: address
       - name: nation
